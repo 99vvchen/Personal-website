@@ -356,6 +356,8 @@
       transition: transform .2s, box-shadow .2s;
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+      color: inherit;
     }
     .project-card:hover {
       transform: translateY(-4px);
@@ -405,6 +407,11 @@
       margin-bottom: 8px;
       flex-wrap: wrap;
     }
+    .project-text-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
     .project-title {
       font-size: 24px;
       font-weight: 900;
@@ -442,8 +449,22 @@
     .project-sub {
       font-size: 16px;
       color: var(--text-muted);
-      margin-bottom: 16px;
+      margin-bottom: 0;
     }
+    .project-tags{
+      display: flex;
+      gap: 5px;
+      margin-top: 20px;
+
+    }
+    .project-tags .tag{
+      color: var(--text-muted);
+      background-color: #eaeaea;
+      font-size: 11px;
+        padding: 3px 5px;
+        border-radius:5px ;
+      }
+
   
     /* ===== EXPERIENCE ===== */
     #experience {
@@ -656,5 +677,16 @@
       .hero-stats { flex-direction: column; gap: 24px; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
+    }
+
+
+
+    /* projects作品集頁面 */
+    .proj-hero-layout{
+      display: flex;
+      justify-content: ;
+    }
+    .proj-hero-cover{
+      width: 500px;
     }
   
