@@ -16,8 +16,7 @@
   <!-- Bootstrap 5 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css">
-
-
+  <script>if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');</script>
 </head>
 
 <body>
@@ -34,6 +33,17 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="切換深色/淺色模式">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
   </nav>
 
   <!-- ===== HERO ===== -->
@@ -50,7 +60,7 @@
             陳婷語<br>
             <span class="highlight">Vivi</span> Chen
           </h1>
-          <p class="hero-role">UI/UX Designer ／ Web Designer</p>
+          <p class="hero-role">UI/UX Designer｜Web Designer</p>
           <p class="hero-desc">
             從書店和美容工作室的第一線經驗出發，我擅長觀察使用者行為，並把洞察轉化成實際可做的設計。<br>
             目前是 UI/UX 設計師，參與過 App 和 Web 專案，也具備前端能力，能兼顧設計與實作，和工程師有效合作。
@@ -60,20 +70,11 @@
             <a href="mailto:99vvchen@gmail.com" class="btn-outline-custom">Say Hello</a>
           </div>
 
-          <!-- Stats -->
+          <!-- Fun tags -->
           <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-num">2<span>+</span></div>
-              <div class="stat-label">完整作品</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-num">474<span>h</span></div>
-              <div class="stat-label">UX 專業訓練</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-num">3<span>+</span></div>
-              <div class="stat-label">年工作經驗</div>
-            </div>
+            <span class="project-thumb-label">#肉桂捲愛好者</span>
+            <span class="project-thumb-label">#brooklyn99忠實粉絲</span>
+            <span class="project-thumb-label">#資深KPOP fans</span>
           </div>
         </div>
 
@@ -86,7 +87,7 @@
                 <circle cx="12" cy="8" r="4" />
                 <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
               </svg>
-              <img class="hero-photo" src="./img/profile.png" alt=""></span>
+              <img class="hero-photo" src="./img/profile.JPG" alt=""></span>
             </div>
           </div>
         </div>
@@ -316,6 +317,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="theme.js"></script>
 
 </body>
 
